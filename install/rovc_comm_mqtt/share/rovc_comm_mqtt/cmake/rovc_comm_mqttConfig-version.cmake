@@ -1,0 +1,1 @@
+/home/luka/ros2_diplpro/build/rovc_comm_mqtt/ament_cmake_core/rovc_comm_mqttConfig-version.cmake

@@ -1,0 +1,150 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/luka/ros2_diplpro/build/rovc_comm_mqtt
+[35m[1mConsolidate compiler generated dependencies of target subscriber_node[0m
+[35m[1mConsolidate compiler generated dependencies of target pub_node[0m
+[35m[1mConsolidate compiler generated dependencies of target publisher_node[0m
+[ 83%] Built target publisher_node
+[ 83%] [32mBuilding CXX object CMakeFiles/pub_node.dir/src/pub_node.cpp.o[0m
+[ 83%] Built target subscriber_node
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/luka/ros2_diplpro/src/rovc_comm_mqtt/src/pub_node.cpp:1[m[K:
+/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp: In instantiation of ‘[01m[Kauto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool) [with ParameterT = std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; std::string = std::__cxx11::basic_string<char>; rcl_interfaces::msg::ParameterDescriptor = rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >][m[K’:
+[01m[K/home/luka/ros2_diplpro/src/rovc_comm_mqtt/src/pub_node.cpp:44:65:[m[K   required from here
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:204:15:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >&)[m[K’
+  204 |       rclcpp::[01;31m[KParameterValue(default_value)[m[K,
+      |               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/luka/ros2_diplpro/src/rovc_comm_mqtt/src/pub_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:121:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<std::__cxx11::basic_string<char> >&)[m[K’
+  121 |   explicit [01;36m[KParameterValue[m[K(const std::vector<std::string> & string_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:121:60:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kconst std::vector<std::__cxx11::basic_string<char> >&[m[K’
+  121 |   explicit ParameterValue([01;36m[Kconst std::vector<std::string> & string_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:118:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<double, std::allocator<double> >&)[m[K’
+  118 |   explicit [01;36m[KParameterValue[m[K(const std::vector<double> & double_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:118:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kconst std::vector<double, std::allocator<double> >&[m[K’
+  118 |   explicit ParameterValue([01;36m[Kconst std::vector<double> & double_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:115:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<float>&)[m[K’
+  115 |   explicit [01;36m[KParameterValue[m[K(const std::vector<float> & double_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:115:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kconst std::vector<float>&[m[K’
+  115 |   explicit ParameterValue([01;36m[Kconst std::vector<float> & double_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:112:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<long int, std::allocator<long int> >&)[m[K’
+  112 |   explicit [01;36m[KParameterValue[m[K(const std::vector<int64_t> & int_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:112:56:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kconst std::vector<long int, std::allocator<long int> >&[m[K’
+  112 |   explicit ParameterValue([01;36m[Kconst std::vector<int64_t> & int_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:109:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<int>&)[m[K’
+  109 |   explicit [01;36m[KParameterValue[m[K(const std::vector<int> & int_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:109:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kconst std::vector<int>&[m[K’
+  109 |   explicit ParameterValue([01;36m[Kconst std::vector<int> & int_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:106:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<bool, std::allocator<bool> >&)[m[K’
+  106 |   explicit [01;36m[KParameterValue[m[K(const std::vector<bool> & bool_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:106:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kconst std::vector<bool, std::allocator<bool> >&[m[K’
+  106 |   explicit ParameterValue([01;36m[Kconst std::vector<bool> & bool_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:103:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const std::vector<unsigned char, std::allocator<unsigned char> >&)[m[K’
+  103 |   explicit [01;36m[KParameterValue[m[K(const std::vector<uint8_t> & byte_array_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:103:56:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kconst std::vector<unsigned char, std::allocator<unsigned char> >&[m[K’
+  103 |   explicit ParameterValue([01;36m[Kconst std::vector<uint8_t> & byte_array_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:100:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const char*)[m[K’
+  100 |   explicit [01;36m[KParameterValue[m[K(const char * string_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:100:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kconst char*[m[K’
+  100 |   explicit ParameterValue([01;36m[Kconst char * string_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:97:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const string&)[m[K’
+   97 |   explicit [01;36m[KParameterValue[m[K(const std::string & string_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:97:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+   97 |   explicit ParameterValue([01;36m[Kconst std::string & string_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:94:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(double)[m[K’
+   94 |   explicit [01;36m[KParameterValue[m[K(const double double_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:94:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kdouble[m[K’
+   94 |   explicit ParameterValue([01;36m[Kconst double double_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:91:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(float)[m[K’
+   91 |   explicit [01;36m[KParameterValue[m[K(const float double_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:91:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kfloat[m[K’
+   91 |   explicit ParameterValue([01;36m[Kconst float double_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:88:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(int64_t)[m[K’
+   88 |   explicit [01;36m[KParameterValue[m[K(const int64_t int_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:88:41:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kint64_t[m[K’ {aka ‘[01m[Klong int[m[K’}
+   88 |   explicit ParameterValue([01;36m[Kconst int64_t int_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:85:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(int)[m[K’
+   85 |   explicit [01;36m[KParameterValue[m[K(const int int_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:85:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kint[m[K’
+   85 |   explicit ParameterValue([01;36m[Kconst int int_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:82:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(bool)[m[K’
+   82 |   explicit [01;36m[KParameterValue[m[K(const bool bool_value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:82:38:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kbool[m[K’
+   82 |   explicit ParameterValue([01;36m[Kconst bool bool_value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:79:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const ParameterValue&)[m[K’
+   79 |   explicit [01;36m[KParameterValue[m[K(const rcl_interfaces::msg::ParameterValue & value);
+      |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:79:71:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kconst ParameterValue&[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterValue_<std::allocator<void> >&[m[K’}
+   79 |   explicit ParameterValue([01;36m[Kconst rcl_interfaces::msg::ParameterValue & value[m[K);
+      |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:76:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue()[m[K’
+   76 |   [01;36m[KParameterValue[m[K();
+      |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:76:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:71:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const rclcpp::ParameterValue&)[m[K’
+   71 | class [01;36m[KParameterValue[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:71:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Kconst rclcpp::ParameterValue&[m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:71:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(rclcpp::ParameterValue&&)[m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:71:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::unordered_map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >[m[K’ to ‘[01m[Krclcpp::ParameterValue&&[m[K’
+gmake[2]: *** [CMakeFiles/pub_node.dir/build.make:76: CMakeFiles/pub_node.dir/src/pub_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pub_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

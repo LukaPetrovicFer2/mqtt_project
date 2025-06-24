@@ -1,0 +1,135 @@
+[0.096s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'rovc_comm_mqtt']
+[0.096s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['rovc_comm_mqtt'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ac2e0aefeb0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ac2e0aef9a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ac2e0aef9a0>>)
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.240s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/luka/ros2_diplpro'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/rovc_comm_mqtt) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/rovc_comm_mqtt) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/rovc_comm_mqtt) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/rovc_comm_mqtt) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/rovc_comm_mqtt) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/rovc_comm_mqtt) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/rovc_comm_mqtt) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/rovc_comm_mqtt) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/rovc_comm_mqtt) by extension 'ros'
+[0.253s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rovc_comm_mqtt' with type 'ros.ament_cmake' and name 'rovc_comm_mqtt'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_simulator) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_simulator) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_simulator) by extensions ['colcon_pkg']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_simulator) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_simulator) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_simulator) by extension 'colcon_meta'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_simulator) by extensions ['ros']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_simulator) by extension 'ros'
+[0.254s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensor_simulator' with type 'ros.ament_python' and name 'sensor_simulator'
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.272s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sensor_simulator' in 'src/sensor_simulator'
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.275s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/luka/ros2_diplpro/install
+[0.276s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 27 installed packages in /home/luka/ros2_ws/install
+[0.277s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 258 installed packages in /opt/ros/humble
+[0.286s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rovc_comm_mqtt' build argument 'cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rovc_comm_mqtt' build argument 'cmake_target' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rovc_comm_mqtt' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rovc_comm_mqtt' build argument 'cmake_clean_cache' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rovc_comm_mqtt' build argument 'cmake_clean_first' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rovc_comm_mqtt' build argument 'cmake_force_configure' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rovc_comm_mqtt' build argument 'ament_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rovc_comm_mqtt' build argument 'catkin_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'rovc_comm_mqtt' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.317s] DEBUG:colcon.colcon_core.verb:Building package 'rovc_comm_mqtt' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/luka/ros2_diplpro/build/rovc_comm_mqtt', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/luka/ros2_diplpro/install/rovc_comm_mqtt', 'merge_install': False, 'path': '/home/luka/ros2_diplpro/src/rovc_comm_mqtt', 'symlink_install': False, 'test_result_base': None}
+[0.317s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.317s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.318s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/luka/ros2_diplpro/src/rovc_comm_mqtt' with build type 'ament_cmake'
+[0.318s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/luka/ros2_diplpro/src/rovc_comm_mqtt'
+[0.319s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.320s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.320s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luka/ros2_diplpro/build/rovc_comm_mqtt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_diplpro/install/sensor_simulator:/opt/ros/humble /usr/bin/cmake /home/luka/ros2_diplpro/src/rovc_comm_mqtt -DCMAKE_INSTALL_PREFIX=/home/luka/ros2_diplpro/install/rovc_comm_mqtt
+[0.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luka/ros2_diplpro/build/rovc_comm_mqtt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_diplpro/install/sensor_simulator:/opt/ros/humble /usr/bin/cmake /home/luka/ros2_diplpro/src/rovc_comm_mqtt -DCMAKE_INSTALL_PREFIX=/home/luka/ros2_diplpro/install/rovc_comm_mqtt
+[0.866s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/luka/ros2_diplpro/build/rovc_comm_mqtt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_diplpro/install/sensor_simulator:/opt/ros/humble /usr/bin/cmake --build /home/luka/ros2_diplpro/build/rovc_comm_mqtt -- -j6 -l6
+[7.298s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/luka/ros2_diplpro/build/rovc_comm_mqtt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_diplpro/install/sensor_simulator:/opt/ros/humble /usr/bin/cmake --build /home/luka/ros2_diplpro/build/rovc_comm_mqtt -- -j6 -l6
+[7.298s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rovc_comm_mqtt)
+[7.300s] Level 1:colcon.colcon_core.environment:checking '/home/luka/ros2_diplpro/install/rovc_comm_mqtt' for CMake module files
+[7.300s] Level 1:colcon.colcon_core.environment:checking '/home/luka/ros2_diplpro/install/rovc_comm_mqtt' for CMake config files
+[7.301s] Level 1:colcon.colcon_core.shell:create_environment_hook('rovc_comm_mqtt', 'cmake_prefix_path')
+[7.301s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/hook/cmake_prefix_path.ps1'
+[7.302s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/hook/cmake_prefix_path.dsv'
+[7.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/hook/cmake_prefix_path.sh'
+[7.303s] Level 1:colcon.colcon_core.environment:checking '/home/luka/ros2_diplpro/install/rovc_comm_mqtt/lib'
+[7.303s] Level 1:colcon.colcon_core.environment:checking '/home/luka/ros2_diplpro/install/rovc_comm_mqtt/bin'
+[7.303s] Level 1:colcon.colcon_core.environment:checking '/home/luka/ros2_diplpro/install/rovc_comm_mqtt/lib/pkgconfig/rovc_comm_mqtt.pc'
+[7.303s] Level 1:colcon.colcon_core.environment:checking '/home/luka/ros2_diplpro/install/rovc_comm_mqtt/lib/python3.10/site-packages'
+[7.303s] Level 1:colcon.colcon_core.environment:checking '/home/luka/ros2_diplpro/install/rovc_comm_mqtt/bin'
+[7.304s] INFO:colcon.colcon_core.shell:Creating package script '/home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/package.ps1'
+[7.304s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/package.dsv'
+[7.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/package.sh'
+[7.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/package.bash'
+[7.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/package.zsh'
+[7.307s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/colcon-core/packages/rovc_comm_mqtt)
+[7.317s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.317s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.317s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[7.317s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.322s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.322s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.322s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.335s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.336s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luka/ros2_diplpro/install/local_setup.ps1'
+[7.337s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/luka/ros2_diplpro/install/_local_setup_util_ps1.py'
+[7.338s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luka/ros2_diplpro/install/setup.ps1'
+[7.340s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luka/ros2_diplpro/install/local_setup.sh'
+[7.341s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/luka/ros2_diplpro/install/_local_setup_util_sh.py'
+[7.341s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luka/ros2_diplpro/install/setup.sh'
+[7.343s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luka/ros2_diplpro/install/local_setup.bash'
+[7.344s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luka/ros2_diplpro/install/setup.bash'
+[7.346s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/luka/ros2_diplpro/install/local_setup.zsh'
+[7.346s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/luka/ros2_diplpro/install/setup.zsh'

@@ -1,0 +1,4 @@
+source;share/rovc_comm_mqtt/local_setup.bash
+source;share/rovc_comm_mqtt/local_setup.dsv
+source;share/rovc_comm_mqtt/local_setup.sh
+source;share/rovc_comm_mqtt/local_setup.zsh

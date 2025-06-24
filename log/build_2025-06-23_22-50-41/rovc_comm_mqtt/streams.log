@@ -1,0 +1,112 @@
+[0.015s] Invoking command in '/home/luka/ros2_diplpro/build/rovc_comm_mqtt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_diplpro/install/sensor_simulator:/opt/ros/humble /usr/bin/cmake /home/luka/ros2_diplpro/src/rovc_comm_mqtt -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luka/ros2_diplpro/install/rovc_comm_mqtt
+[0.274s] -- The C compiler identification is GNU 11.4.0
+[0.347s] -- The CXX compiler identification is GNU 11.4.0
+[0.355s] -- Detecting C compiler ABI info
+[0.452s] -- Detecting C compiler ABI info - done
+[0.459s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.460s] -- Detecting C compile features
+[0.471s] -- Detecting C compile features - done
+[0.474s] -- Detecting CXX compiler ABI info
+[0.569s] -- Detecting CXX compiler ABI info - done
+[0.576s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.576s] -- Detecting CXX compile features
+[0.577s] -- Detecting CXX compile features - done
+[0.594s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.753s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.815s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.891s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.972s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.986s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.998s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.015s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.038s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.103s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.108s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.443s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.470s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.513s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.538s] -- Looking for pthread.h
+[1.636s] -- Looking for pthread.h - found
+[1.636s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.728s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.729s] -- Found Threads: TRUE  
+[1.808s] -- Found nlohmann_json: /usr/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.10.5") 
+[1.817s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.931s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.931s] -- Configured cppcheck include dirs: 
+[1.931s] -- Configured cppcheck exclude dirs and/or files: 
+[1.934s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.941s] -- Added test 'lint_cmake' to check CMake code style
+[1.944s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.967s] -- Added test 'uncrustify' to check C / C++ code style
+[1.967s] -- Configured uncrustify additional arguments: 
+[1.971s] -- Added test 'xmllint' to check XML markup files
+[1.973s] -- Configuring done
+[1.987s] -- Generating done
+[1.992s] -- Build files have been written to: /home/luka/ros2_diplpro/build/rovc_comm_mqtt
+[1.999s] Invoked command in '/home/luka/ros2_diplpro/build/rovc_comm_mqtt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_diplpro/install/sensor_simulator:/opt/ros/humble /usr/bin/cmake /home/luka/ros2_diplpro/src/rovc_comm_mqtt -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/luka/ros2_diplpro/install/rovc_comm_mqtt
+[2.001s] Invoking command in '/home/luka/ros2_diplpro/build/rovc_comm_mqtt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_diplpro/install/sensor_simulator:/opt/ros/humble /usr/bin/cmake --build /home/luka/ros2_diplpro/build/rovc_comm_mqtt -- -j6 -l6
+[2.057s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o[0m
+[2.057s] [ 50%] [32mBuilding CXX object CMakeFiles/subscriber_node.dir/src/subscriber_node.cpp.o[0m
+[2.057s] [ 50%] [32mBuilding CXX object CMakeFiles/pub_node.dir/src/pub_node.cpp.o[0m
+[6.730s] [ 66%] [32m[1mLinking CXX executable subscriber_node[0m
+[6.996s] [ 66%] Built target subscriber_node
+[7.380s] [ 83%] [32m[1mLinking CXX executable publisher_node[0m
+[7.649s] [ 83%] Built target publisher_node
+[14.759s] [100%] [32m[1mLinking CXX executable pub_node[0m
+[15.397s] [100%] Built target pub_node
+[15.409s] Invoked command in '/home/luka/ros2_diplpro/build/rovc_comm_mqtt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_diplpro/install/sensor_simulator:/opt/ros/humble /usr/bin/cmake --build /home/luka/ros2_diplpro/build/rovc_comm_mqtt -- -j6 -l6
+[15.419s] Invoking command in '/home/luka/ros2_diplpro/build/rovc_comm_mqtt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_diplpro/install/sensor_simulator:/opt/ros/humble /usr/bin/cmake --install /home/luka/ros2_diplpro/build/rovc_comm_mqtt
+[15.428s] -- Install configuration: ""
+[15.428s] -- Execute custom install script
+[15.428s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/lib/rovc_comm_mqtt/publisher_node
+[15.438s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/lib/rovc_comm_mqtt/subscriber_node
+[15.447s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/lib/rovc_comm_mqtt/pub_node
+[15.457s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/launch/mqtt_pub.launch.py
+[15.467s] [33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+[15.467s]   Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+[15.467s]   symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+[15.467s]   Use the cmake_policy command to set the policy and suppress this warning.
+[15.467s] Call Stack (most recent call first):
+[15.467s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_directory)
+[15.467s]   cmake_install.cmake:46 (include)
+[15.467s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[15.467s] [0m
+[15.467s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/build/.built_by
+[15.476s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/build/COLCON_IGNORE
+[15.486s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/.colcon_install_layout
+[15.495s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/COLCON_IGNORE
+[15.504s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/_local_setup_util_ps1.py
+[15.514s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/_local_setup_util_sh.py
+[15.523s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/local_setup.bash
+[15.532s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/local_setup.ps1
+[15.541s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/local_setup.sh
+[15.551s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/local_setup.zsh
+[15.560s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/setup.bash
+[15.569s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/setup.ps1
+[15.579s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/setup.sh
+[15.588s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/setup.zsh
+[15.598s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/COLCON_IGNORE
+[15.607s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/build_2025-05-20_22-28-42/events.log
+[15.616s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/build_2025-05-20_22-28-42/logger_all.log
+[15.626s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/latest/events.log
+[15.635s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/latest/logger_all.log
+[15.644s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/latest_build/events.log
+[15.653s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/latest_build/logger_all.log
+[15.663s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/params.yaml
+[15.672s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/ament_index/resource_index/package_run_dependencies/rovc_comm_mqtt
+[15.682s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/ament_index/resource_index/parent_prefix_path/rovc_comm_mqtt
+[15.691s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/environment/ament_prefix_path.sh
+[15.700s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/environment/ament_prefix_path.dsv
+[15.710s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/environment/path.sh
+[15.719s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/environment/path.dsv
+[15.728s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/local_setup.bash
+[15.737s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/local_setup.sh
+[15.747s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/local_setup.zsh
+[15.756s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/local_setup.dsv
+[15.765s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/package.dsv
+[15.775s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/ament_index/resource_index/packages/rovc_comm_mqtt
+[15.784s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/cmake/rovc_comm_mqttConfig.cmake
+[15.794s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/cmake/rovc_comm_mqttConfig-version.cmake
+[15.803s] -- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/package.xml
+[15.814s] Invoked command in '/home/luka/ros2_diplpro/build/rovc_comm_mqtt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_diplpro/install/sensor_simulator:/opt/ros/humble /usr/bin/cmake --install /home/luka/ros2_diplpro/build/rovc_comm_mqtt

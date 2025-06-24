@@ -1,0 +1,1 @@
+/home/luka/ros2_diplpro/src/rovc_comm_mqtt/config/install/setup.bash

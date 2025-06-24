@@ -1,0 +1,24 @@
+[0.565s] Invoking command in '/home/luka/ros2_diplpro/build/sensor_simulator': PYTHONPATH=/home/luka/ros2_diplpro/build/sensor_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luka/ros2_diplpro/build/sensor_simulator/build --no-deps symlink_data
+[0.799s] running develop
+[0.936s] running egg_info
+[0.936s] creating sensor_simulator.egg-info
+[0.937s] writing sensor_simulator.egg-info/PKG-INFO
+[0.937s] writing dependency_links to sensor_simulator.egg-info/dependency_links.txt
+[0.937s] writing entry points to sensor_simulator.egg-info/entry_points.txt
+[0.937s] writing requirements to sensor_simulator.egg-info/requires.txt
+[0.937s] writing top-level names to sensor_simulator.egg-info/top_level.txt
+[0.937s] writing manifest file 'sensor_simulator.egg-info/SOURCES.txt'
+[0.938s] reading manifest file 'sensor_simulator.egg-info/SOURCES.txt'
+[0.939s] writing manifest file 'sensor_simulator.egg-info/SOURCES.txt'
+[0.940s] running build_ext
+[0.940s] Creating /home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages/sensor-simulator.egg-link (link to .)
+[0.941s] Installing sensor_simulator script to /home/luka/ros2_diplpro/install/sensor_simulator/lib/sensor_simulator
+[0.941s] 
+[0.941s] Installed /home/luka/ros2_diplpro/build/sensor_simulator
+[0.942s] running symlink_data
+[0.942s] creating /home/luka/ros2_diplpro/install/sensor_simulator/share/ament_index
+[0.942s] creating /home/luka/ros2_diplpro/install/sensor_simulator/share/ament_index/resource_index
+[0.942s] creating /home/luka/ros2_diplpro/install/sensor_simulator/share/ament_index/resource_index/packages
+[0.942s] symbolically linking /home/luka/ros2_diplpro/build/sensor_simulator/resource/sensor_simulator -> /home/luka/ros2_diplpro/install/sensor_simulator/share/ament_index/resource_index/packages
+[0.942s] symbolically linking /home/luka/ros2_diplpro/build/sensor_simulator/package.xml -> /home/luka/ros2_diplpro/install/sensor_simulator/share/sensor_simulator
+[0.962s] Invoked command in '/home/luka/ros2_diplpro/build/sensor_simulator' returned '0': PYTHONPATH=/home/luka/ros2_diplpro/build/sensor_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luka/ros2_diplpro/build/sensor_simulator/build --no-deps symlink_data

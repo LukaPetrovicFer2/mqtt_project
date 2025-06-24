@@ -1,0 +1,222 @@
+[0.000000] (-) TimerEvent: {}
+[0.000742] (rovc_comm_mqtt) JobQueued: {'identifier': 'rovc_comm_mqtt', 'dependencies': OrderedDict()}
+[0.000776] (sensor_simulator) JobQueued: {'identifier': 'sensor_simulator', 'dependencies': OrderedDict()}
+[0.000804] (rovc_comm_mqtt) JobStarted: {'identifier': 'rovc_comm_mqtt'}
+[0.007718] (sensor_simulator) JobStarted: {'identifier': 'sensor_simulator'}
+[0.014682] (rovc_comm_mqtt) JobProgress: {'identifier': 'rovc_comm_mqtt', 'progress': 'cmake'}
+[0.015160] (rovc_comm_mqtt) JobProgress: {'identifier': 'rovc_comm_mqtt', 'progress': 'build'}
+[0.015890] (rovc_comm_mqtt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/luka/ros2_diplpro/build/rovc_comm_mqtt', '--', '-j6', '-l6'], 'cwd': '/home/luka/ros2_diplpro/build/rovc_comm_mqtt', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luka'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/luka/ros2_ws/install/marinero_steering_controller/lib:/home/luka/ros2_ws/install/velocity_controllers/lib:/home/luka/ros2_ws/install/tricycle_steering_controller/lib:/home/luka/ros2_ws/install/tricycle_controller/lib:/home/luka/ros2_ws/install/bicycle_steering_controller/lib:/home/luka/ros2_ws/install/ackermann_steering_controller/lib:/home/luka/ros2_ws/install/steering_controllers_library/lib:/home/luka/ros2_ws/install/range_sensor_broadcaster/lib:/home/luka/ros2_ws/install/position_controllers/lib:/home/luka/ros2_ws/install/pid_controller/lib:/home/luka/ros2_ws/install/admittance_controller/lib:/home/luka/ros2_ws/install/joint_trajectory_controller/lib:/home/luka/ros2_ws/install/joint_state_broadcaster/lib:/home/luka/ros2_ws/install/imu_sensor_broadcaster/lib:/home/luka/ros2_ws/install/gripper_controllers/lib:/home/luka/ros2_ws/install/effort_controllers/lib:/home/luka/ros2_ws/install/forward_command_controller/lib:/home/luka/ros2_ws/install/force_torque_sensor_broadcaster/lib:/home/luka/ros2_ws/install/diff_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/luka'), ('OLDPWD', '/home/luka/ros2_diplpro'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1296'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=59facfd4d97e89756defcd4e68596b03'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/luka/ros2_diplpro/install:/home/luka/ros2_ws/install'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'luka'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'luka'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/luka/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/luka-pc:@/tmp/.ICE-unix/1296,unix/luka-pc:/tmp/.ICE-unix/1296'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f56126fa_3075_49e5_aa1e_60eb44e26f78'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.128'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/luka/ros2_ws/install/marinero_steering_controller:/home/luka/ros2_ws/install/ros2_controllers:/home/luka/ros2_ws/install/velocity_controllers:/home/luka/ros2_ws/install/tricycle_steering_controller:/home/luka/ros2_ws/install/tricycle_controller:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/bicycle_steering_controller:/home/luka/ros2_ws/install/ackermann_steering_controller:/home/luka/ros2_ws/install/steering_controllers_library:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/range_sensor_broadcaster:/home/luka/ros2_ws/install/position_controllers:/home/luka/ros2_ws/install/pid_controller:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_launch:/home/luka/ros2_ws/install/marinero_description:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_ws/install/admittance_controller:/home/luka/ros2_ws/install/joint_trajectory_controller:/home/luka/ros2_ws/install/joint_state_broadcaster:/home/luka/ros2_ws/install/imu_sensor_broadcaster:/home/luka/ros2_ws/install/gripper_controllers:/home/luka/ros2_ws/install/effort_controllers:/home/luka/ros2_ws/install/forward_command_controller:/home/luka/ros2_ws/install/force_torque_sensor_broadcaster:/home/luka/ros2_ws/install/diff_drive_controller:/home/luka/ros2_diplpro/install/sensor_simulator:/home/luka/ros2_diplpro/install/rovc_comm_mqtt:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/luka/ros2_diplpro/build/rovc_comm_mqtt'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=59facfd4d97e89756defcd4e68596b03'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/luka/ros2_ws/build/teleop_controller:/home/luka/ros2_ws/install/teleop_controller/lib/python3.10/site-packages:/home/luka/ros2_ws/build/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:/home/luka/ros2_ws/build/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:/home/luka/ros2_ws/build/marinero_mqtt:/home/luka/ros2_ws/install/marinero_mqtt/lib/python3.10/site-packages:/home/luka/ros2_ws/build/marinero_battery:/home/luka/ros2_ws/install/marinero_battery/lib/python3.10/site-packages:/home/luka/ros2_diplpro/build/sensor_simulator:/home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/luka/ros2_ws/install/marinero_steering_controller:/home/luka/ros2_ws/install/ros2_controllers:/home/luka/ros2_ws/install/velocity_controllers:/home/luka/ros2_ws/install/tricycle_steering_controller:/home/luka/ros2_ws/install/tricycle_controller:/home/luka/ros2_ws/install/bicycle_steering_controller:/home/luka/ros2_ws/install/ackermann_steering_controller:/home/luka/ros2_ws/install/steering_controllers_library:/home/luka/ros2_ws/install/range_sensor_broadcaster:/home/luka/ros2_ws/install/position_controllers:/home/luka/ros2_ws/install/pid_controller:/home/luka/ros2_ws/install/marinero_launch:/home/luka/ros2_ws/install/marinero_description:/home/luka/ros2_ws/install/admittance_controller:/home/luka/ros2_ws/install/joint_trajectory_controller:/home/luka/ros2_ws/install/joint_state_broadcaster:/home/luka/ros2_ws/install/imu_sensor_broadcaster:/home/luka/ros2_ws/install/gripper_controllers:/home/luka/ros2_ws/install/effort_controllers:/home/luka/ros2_ws/install/forward_command_controller:/home/luka/ros2_ws/install/force_torque_sensor_broadcaster:/home/luka/ros2_ws/install/diff_drive_controller:/home/luka/ros2_diplpro/install/rovc_comm_mqtt:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_diplpro/install/sensor_simulator:/opt/ros/humble')]), 'shell': False}
+[0.065285] (rovc_comm_mqtt) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pub_node\x1b[0m\n'}
+[0.081469] (rovc_comm_mqtt) StdoutLine: {'line': b'[ 66%] Built target subscriber_node\n'}
+[0.081603] (rovc_comm_mqtt) StdoutLine: {'line': b'[ 66%] Built target publisher_node\n'}
+[0.084018] (rovc_comm_mqtt) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/pub_node.dir/src/pub_node.cpp.o\x1b[0m\n'}
+[0.099833] (-) TimerEvent: {}
+[0.200064] (-) TimerEvent: {}
+[0.300298] (-) TimerEvent: {}
+[0.400547] (-) TimerEvent: {}
+[0.500790] (-) TimerEvent: {}
+[0.579565] (sensor_simulator) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/luka/ros2_diplpro/build/sensor_simulator/build', '--no-deps', 'symlink_data'], 'cwd': '/home/luka/ros2_diplpro/build/sensor_simulator', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'luka', 'LC_TIME': 'hr_HR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/luka/ros2_ws/install/marinero_steering_controller/lib:/home/luka/ros2_ws/install/velocity_controllers/lib:/home/luka/ros2_ws/install/tricycle_steering_controller/lib:/home/luka/ros2_ws/install/tricycle_controller/lib:/home/luka/ros2_ws/install/bicycle_steering_controller/lib:/home/luka/ros2_ws/install/ackermann_steering_controller/lib:/home/luka/ros2_ws/install/steering_controllers_library/lib:/home/luka/ros2_ws/install/range_sensor_broadcaster/lib:/home/luka/ros2_ws/install/position_controllers/lib:/home/luka/ros2_ws/install/pid_controller/lib:/home/luka/ros2_ws/install/admittance_controller/lib:/home/luka/ros2_ws/install/joint_trajectory_controller/lib:/home/luka/ros2_ws/install/joint_state_broadcaster/lib:/home/luka/ros2_ws/install/imu_sensor_broadcaster/lib:/home/luka/ros2_ws/install/gripper_controllers/lib:/home/luka/ros2_ws/install/effort_controllers/lib:/home/luka/ros2_ws/install/forward_command_controller/lib:/home/luka/ros2_ws/install/force_torque_sensor_broadcaster/lib:/home/luka/ros2_ws/install/diff_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/luka', 'OLDPWD': '/home/luka/ros2_diplpro', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'hr_HR.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1296', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=59facfd4d97e89756defcd4e68596b03', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/luka/ros2_diplpro/install:/home/luka/ros2_ws/install', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'luka', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luka', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/luka/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/luka-pc:@/tmp/.ICE-unix/1296,unix/luka-pc:/tmp/.ICE-unix/1296', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'hr_HR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f56126fa_3075_49e5_aa1e_60eb44e26f78', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'hr_HR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.128', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/luka/ros2_ws/install/marinero_steering_controller:/home/luka/ros2_ws/install/ros2_controllers:/home/luka/ros2_ws/install/velocity_controllers:/home/luka/ros2_ws/install/tricycle_steering_controller:/home/luka/ros2_ws/install/tricycle_controller:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/bicycle_steering_controller:/home/luka/ros2_ws/install/ackermann_steering_controller:/home/luka/ros2_ws/install/steering_controllers_library:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/range_sensor_broadcaster:/home/luka/ros2_ws/install/position_controllers:/home/luka/ros2_ws/install/pid_controller:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_launch:/home/luka/ros2_ws/install/marinero_description:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_ws/install/admittance_controller:/home/luka/ros2_ws/install/joint_trajectory_controller:/home/luka/ros2_ws/install/joint_state_broadcaster:/home/luka/ros2_ws/install/imu_sensor_broadcaster:/home/luka/ros2_ws/install/gripper_controllers:/home/luka/ros2_ws/install/effort_controllers:/home/luka/ros2_ws/install/forward_command_controller:/home/luka/ros2_ws/install/force_torque_sensor_broadcaster:/home/luka/ros2_ws/install/diff_drive_controller:/home/luka/ros2_diplpro/install/sensor_simulator:/home/luka/ros2_diplpro/install/rovc_comm_mqtt:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'hr_HR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'hr_HR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'hr_HR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/luka/ros2_diplpro/build/sensor_simulator', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=59facfd4d97e89756defcd4e68596b03', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/luka/ros2_diplpro/build/sensor_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages:/home/luka/ros2_ws/build/teleop_controller:/home/luka/ros2_ws/install/teleop_controller/lib/python3.10/site-packages:/home/luka/ros2_ws/build/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:/home/luka/ros2_ws/build/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:/home/luka/ros2_ws/build/marinero_mqtt:/home/luka/ros2_ws/install/marinero_mqtt/lib/python3.10/site-packages:/home/luka/ros2_ws/build/marinero_battery:/home/luka/ros2_ws/install/marinero_battery/lib/python3.10/site-packages:/home/luka/ros2_diplpro/build/sensor_simulator:/home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'hr_HR.UTF-8', 'LC_PAPER': 'hr_HR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/luka/ros2_ws/install/marinero_steering_controller:/home/luka/ros2_ws/install/ros2_controllers:/home/luka/ros2_ws/install/velocity_controllers:/home/luka/ros2_ws/install/tricycle_steering_controller:/home/luka/ros2_ws/install/tricycle_controller:/home/luka/ros2_ws/install/bicycle_steering_controller:/home/luka/ros2_ws/install/ackermann_steering_controller:/home/luka/ros2_ws/install/steering_controllers_library:/home/luka/ros2_ws/install/range_sensor_broadcaster:/home/luka/ros2_ws/install/position_controllers:/home/luka/ros2_ws/install/pid_controller:/home/luka/ros2_ws/install/marinero_launch:/home/luka/ros2_ws/install/marinero_description:/home/luka/ros2_ws/install/admittance_controller:/home/luka/ros2_ws/install/joint_trajectory_controller:/home/luka/ros2_ws/install/joint_state_broadcaster:/home/luka/ros2_ws/install/imu_sensor_broadcaster:/home/luka/ros2_ws/install/gripper_controllers:/home/luka/ros2_ws/install/effort_controllers:/home/luka/ros2_ws/install/forward_command_controller:/home/luka/ros2_ws/install/force_torque_sensor_broadcaster:/home/luka/ros2_ws/install/diff_drive_controller:/home/luka/ros2_diplpro/install/rovc_comm_mqtt'}, 'shell': False}
+[0.600906] (-) TimerEvent: {}
+[0.701143] (-) TimerEvent: {}
+[0.801394] (-) TimerEvent: {}
+[0.816513] (sensor_simulator) StdoutLine: {'line': b'running develop\n'}
+[0.901509] (-) TimerEvent: {}
+[0.957486] (sensor_simulator) StdoutLine: {'line': b'running egg_info\n'}
+[0.957841] (sensor_simulator) StdoutLine: {'line': b'writing sensor_simulator.egg-info/PKG-INFO\n'}
+[0.957940] (sensor_simulator) StdoutLine: {'line': b'writing dependency_links to sensor_simulator.egg-info/dependency_links.txt\n'}
+[0.958062] (sensor_simulator) StdoutLine: {'line': b'writing entry points to sensor_simulator.egg-info/entry_points.txt\n'}
+[0.958146] (sensor_simulator) StdoutLine: {'line': b'writing requirements to sensor_simulator.egg-info/requires.txt\n'}
+[0.958235] (sensor_simulator) StdoutLine: {'line': b'writing top-level names to sensor_simulator.egg-info/top_level.txt\n'}
+[0.959798] (sensor_simulator) StdoutLine: {'line': b"reading manifest file 'sensor_simulator.egg-info/SOURCES.txt'\n"}
+[0.960472] (sensor_simulator) StdoutLine: {'line': b"writing manifest file 'sensor_simulator.egg-info/SOURCES.txt'\n"}
+[0.961804] (sensor_simulator) StdoutLine: {'line': b'running build_ext\n'}
+[0.961999] (sensor_simulator) StdoutLine: {'line': b'Creating /home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages/sensor-simulator.egg-link (link to .)\n'}
+[0.962823] (sensor_simulator) StdoutLine: {'line': b'Installing sensor_simulator script to /home/luka/ros2_diplpro/install/sensor_simulator/lib/sensor_simulator\n'}
+[0.963061] (sensor_simulator) StdoutLine: {'line': b'\n'}
+[0.963139] (sensor_simulator) StdoutLine: {'line': b'Installed /home/luka/ros2_diplpro/build/sensor_simulator\n'}
+[0.963194] (sensor_simulator) StdoutLine: {'line': b'running symlink_data\n'}
+[0.985968] (sensor_simulator) CommandEnded: {'returncode': 0}
+[0.995774] (sensor_simulator) JobEnded: {'identifier': 'sensor_simulator', 'rc': 0}
+[1.001610] (-) TimerEvent: {}
+[1.101833] (-) TimerEvent: {}
+[1.202084] (-) TimerEvent: {}
+[1.302335] (-) TimerEvent: {}
+[1.402558] (-) TimerEvent: {}
+[1.502804] (-) TimerEvent: {}
+[1.603054] (-) TimerEvent: {}
+[1.703307] (-) TimerEvent: {}
+[1.803576] (-) TimerEvent: {}
+[1.903833] (-) TimerEvent: {}
+[2.004089] (-) TimerEvent: {}
+[2.104362] (-) TimerEvent: {}
+[2.204622] (-) TimerEvent: {}
+[2.304875] (-) TimerEvent: {}
+[2.405122] (-) TimerEvent: {}
+[2.505379] (-) TimerEvent: {}
+[2.605623] (-) TimerEvent: {}
+[2.705867] (-) TimerEvent: {}
+[2.806117] (-) TimerEvent: {}
+[2.906379] (-) TimerEvent: {}
+[3.006651] (-) TimerEvent: {}
+[3.106918] (-) TimerEvent: {}
+[3.207139] (-) TimerEvent: {}
+[3.307397] (-) TimerEvent: {}
+[3.407646] (-) TimerEvent: {}
+[3.507900] (-) TimerEvent: {}
+[3.608148] (-) TimerEvent: {}
+[3.708398] (-) TimerEvent: {}
+[3.808612] (-) TimerEvent: {}
+[3.908828] (-) TimerEvent: {}
+[4.009046] (-) TimerEvent: {}
+[4.109296] (-) TimerEvent: {}
+[4.209557] (-) TimerEvent: {}
+[4.309802] (-) TimerEvent: {}
+[4.410047] (-) TimerEvent: {}
+[4.510292] (-) TimerEvent: {}
+[4.610549] (-) TimerEvent: {}
+[4.710796] (-) TimerEvent: {}
+[4.811042] (-) TimerEvent: {}
+[4.911290] (-) TimerEvent: {}
+[5.011510] (-) TimerEvent: {}
+[5.111759] (-) TimerEvent: {}
+[5.212005] (-) TimerEvent: {}
+[5.312252] (-) TimerEvent: {}
+[5.412472] (-) TimerEvent: {}
+[5.512717] (-) TimerEvent: {}
+[5.612966] (-) TimerEvent: {}
+[5.713214] (-) TimerEvent: {}
+[5.813427] (-) TimerEvent: {}
+[5.913680] (-) TimerEvent: {}
+[6.013935] (-) TimerEvent: {}
+[6.114188] (-) TimerEvent: {}
+[6.214425] (-) TimerEvent: {}
+[6.314674] (-) TimerEvent: {}
+[6.414925] (-) TimerEvent: {}
+[6.515174] (-) TimerEvent: {}
+[6.615417] (-) TimerEvent: {}
+[6.715663] (-) TimerEvent: {}
+[6.815926] (-) TimerEvent: {}
+[6.916184] (-) TimerEvent: {}
+[7.016426] (-) TimerEvent: {}
+[7.116668] (-) TimerEvent: {}
+[7.216912] (-) TimerEvent: {}
+[7.317158] (-) TimerEvent: {}
+[7.417404] (-) TimerEvent: {}
+[7.517640] (-) TimerEvent: {}
+[7.617881] (-) TimerEvent: {}
+[7.718125] (-) TimerEvent: {}
+[7.818378] (-) TimerEvent: {}
+[7.918622] (-) TimerEvent: {}
+[8.018865] (-) TimerEvent: {}
+[8.119106] (-) TimerEvent: {}
+[8.219362] (-) TimerEvent: {}
+[8.319606] (-) TimerEvent: {}
+[8.419848] (-) TimerEvent: {}
+[8.520092] (-) TimerEvent: {}
+[8.620336] (-) TimerEvent: {}
+[8.720585] (-) TimerEvent: {}
+[8.820827] (-) TimerEvent: {}
+[8.921070] (-) TimerEvent: {}
+[9.021313] (-) TimerEvent: {}
+[9.121563] (-) TimerEvent: {}
+[9.221806] (-) TimerEvent: {}
+[9.322048] (-) TimerEvent: {}
+[9.422288] (-) TimerEvent: {}
+[9.522540] (-) TimerEvent: {}
+[9.622783] (-) TimerEvent: {}
+[9.723028] (-) TimerEvent: {}
+[9.823282] (-) TimerEvent: {}
+[9.923561] (-) TimerEvent: {}
+[10.023780] (-) TimerEvent: {}
+[10.124031] (-) TimerEvent: {}
+[10.224271] (-) TimerEvent: {}
+[10.324543] (-) TimerEvent: {}
+[10.424784] (-) TimerEvent: {}
+[10.525061] (-) TimerEvent: {}
+[10.625299] (-) TimerEvent: {}
+[10.725513] (-) TimerEvent: {}
+[10.825752] (-) TimerEvent: {}
+[10.925995] (-) TimerEvent: {}
+[11.026233] (-) TimerEvent: {}
+[11.126471] (-) TimerEvent: {}
+[11.226701] (-) TimerEvent: {}
+[11.327031] (-) TimerEvent: {}
+[11.427651] (-) TimerEvent: {}
+[11.528243] (-) TimerEvent: {}
+[11.629004] (-) TimerEvent: {}
+[11.729548] (-) TimerEvent: {}
+[11.829793] (-) TimerEvent: {}
+[11.930043] (-) TimerEvent: {}
+[12.030290] (-) TimerEvent: {}
+[12.130542] (-) TimerEvent: {}
+[12.230797] (-) TimerEvent: {}
+[12.331055] (-) TimerEvent: {}
+[12.431309] (-) TimerEvent: {}
+[12.531542] (-) TimerEvent: {}
+[12.604892] (rovc_comm_mqtt) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pub_node\x1b[0m\n'}
+[12.631662] (-) TimerEvent: {}
+[12.731926] (-) TimerEvent: {}
+[12.832188] (-) TimerEvent: {}
+[12.932413] (-) TimerEvent: {}
+[13.032665] (-) TimerEvent: {}
+[13.132926] (-) TimerEvent: {}
+[13.233187] (-) TimerEvent: {}
+[13.261288] (rovc_comm_mqtt) StdoutLine: {'line': b'[100%] Built target pub_node\n'}
+[13.273601] (rovc_comm_mqtt) CommandEnded: {'returncode': 0}
+[13.274236] (rovc_comm_mqtt) JobProgress: {'identifier': 'rovc_comm_mqtt', 'progress': 'install'}
+[13.284313] (rovc_comm_mqtt) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/luka/ros2_diplpro/build/rovc_comm_mqtt'], 'cwd': '/home/luka/ros2_diplpro/build/rovc_comm_mqtt', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'luka'), ('LC_TIME', 'hr_HR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/luka/ros2_ws/install/marinero_steering_controller/lib:/home/luka/ros2_ws/install/velocity_controllers/lib:/home/luka/ros2_ws/install/tricycle_steering_controller/lib:/home/luka/ros2_ws/install/tricycle_controller/lib:/home/luka/ros2_ws/install/bicycle_steering_controller/lib:/home/luka/ros2_ws/install/ackermann_steering_controller/lib:/home/luka/ros2_ws/install/steering_controllers_library/lib:/home/luka/ros2_ws/install/range_sensor_broadcaster/lib:/home/luka/ros2_ws/install/position_controllers/lib:/home/luka/ros2_ws/install/pid_controller/lib:/home/luka/ros2_ws/install/admittance_controller/lib:/home/luka/ros2_ws/install/joint_trajectory_controller/lib:/home/luka/ros2_ws/install/joint_state_broadcaster/lib:/home/luka/ros2_ws/install/imu_sensor_broadcaster/lib:/home/luka/ros2_ws/install/gripper_controllers/lib:/home/luka/ros2_ws/install/effort_controllers/lib:/home/luka/ros2_ws/install/forward_command_controller/lib:/home/luka/ros2_ws/install/force_torque_sensor_broadcaster/lib:/home/luka/ros2_ws/install/diff_drive_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/luka'), ('OLDPWD', '/home/luka/ros2_diplpro'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'hr_HR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1296'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=59facfd4d97e89756defcd4e68596b03'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/luka/ros2_diplpro/install:/home/luka/ros2_ws/install'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'luka'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'luka'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/luka/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/luka-pc:@/tmp/.ICE-unix/1296,unix/luka-pc:/tmp/.ICE-unix/1296'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'hr_HR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f56126fa_3075_49e5_aa1e_60eb44e26f78'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'hr_HR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.128'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/luka/ros2_ws/install/marinero_steering_controller:/home/luka/ros2_ws/install/ros2_controllers:/home/luka/ros2_ws/install/velocity_controllers:/home/luka/ros2_ws/install/tricycle_steering_controller:/home/luka/ros2_ws/install/tricycle_controller:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/bicycle_steering_controller:/home/luka/ros2_ws/install/ackermann_steering_controller:/home/luka/ros2_ws/install/steering_controllers_library:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/range_sensor_broadcaster:/home/luka/ros2_ws/install/position_controllers:/home/luka/ros2_ws/install/pid_controller:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_launch:/home/luka/ros2_ws/install/marinero_description:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_ws/install/admittance_controller:/home/luka/ros2_ws/install/joint_trajectory_controller:/home/luka/ros2_ws/install/joint_state_broadcaster:/home/luka/ros2_ws/install/imu_sensor_broadcaster:/home/luka/ros2_ws/install/gripper_controllers:/home/luka/ros2_ws/install/effort_controllers:/home/luka/ros2_ws/install/forward_command_controller:/home/luka/ros2_ws/install/force_torque_sensor_broadcaster:/home/luka/ros2_ws/install/diff_drive_controller:/home/luka/ros2_diplpro/install/sensor_simulator:/home/luka/ros2_diplpro/install/rovc_comm_mqtt:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'hr_HR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'hr_HR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'hr_HR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/luka/ros2_diplpro/build/rovc_comm_mqtt'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=59facfd4d97e89756defcd4e68596b03'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/luka/ros2_ws/build/teleop_controller:/home/luka/ros2_ws/install/teleop_controller/lib/python3.10/site-packages:/home/luka/ros2_ws/build/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:/home/luka/ros2_ws/build/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:/home/luka/ros2_ws/build/marinero_mqtt:/home/luka/ros2_ws/install/marinero_mqtt/lib/python3.10/site-packages:/home/luka/ros2_ws/build/marinero_battery:/home/luka/ros2_ws/install/marinero_battery/lib/python3.10/site-packages:/home/luka/ros2_diplpro/build/sensor_simulator:/home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'hr_HR.UTF-8'), ('LC_PAPER', 'hr_HR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/luka/ros2_ws/install/marinero_steering_controller:/home/luka/ros2_ws/install/ros2_controllers:/home/luka/ros2_ws/install/velocity_controllers:/home/luka/ros2_ws/install/tricycle_steering_controller:/home/luka/ros2_ws/install/tricycle_controller:/home/luka/ros2_ws/install/bicycle_steering_controller:/home/luka/ros2_ws/install/ackermann_steering_controller:/home/luka/ros2_ws/install/steering_controllers_library:/home/luka/ros2_ws/install/range_sensor_broadcaster:/home/luka/ros2_ws/install/position_controllers:/home/luka/ros2_ws/install/pid_controller:/home/luka/ros2_ws/install/marinero_launch:/home/luka/ros2_ws/install/marinero_description:/home/luka/ros2_ws/install/admittance_controller:/home/luka/ros2_ws/install/joint_trajectory_controller:/home/luka/ros2_ws/install/joint_state_broadcaster:/home/luka/ros2_ws/install/imu_sensor_broadcaster:/home/luka/ros2_ws/install/gripper_controllers:/home/luka/ros2_ws/install/effort_controllers:/home/luka/ros2_ws/install/forward_command_controller:/home/luka/ros2_ws/install/force_torque_sensor_broadcaster:/home/luka/ros2_ws/install/diff_drive_controller:/home/luka/ros2_diplpro/install/rovc_comm_mqtt:/home/luka/ros2_ws/install/teleop_controller:/home/luka/ros2_ws/install/rqt_joint_trajectory_controller:/home/luka/ros2_ws/install/ros2_controllers_test_nodes:/home/luka/ros2_ws/install/marinero_mqtt:/home/luka/ros2_ws/install/marinero_battery:/home/luka/ros2_diplpro/install/sensor_simulator:/opt/ros/humble')]), 'shell': False}
+[13.292398] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.292899] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[13.293136] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/lib/rovc_comm_mqtt/publisher_node\n'}
+[13.293282] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/lib/rovc_comm_mqtt/subscriber_node\n'}
+[13.293518] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/lib/rovc_comm_mqtt/pub_node\n'}
+[13.293793] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/launch/mqtt_pub.launch.py\n'}
+[13.294156] (rovc_comm_mqtt) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):\n'}
+[13.294276] (rovc_comm_mqtt) StderrLine: {'line': b'  Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow\n'}
+[13.294409] (rovc_comm_mqtt) StderrLine: {'line': b'  symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.\n'}
+[13.294504] (rovc_comm_mqtt) StderrLine: {'line': b'  Use the cmake_policy command to set the policy and suppress this warning.\n'}
+[13.294573] (rovc_comm_mqtt) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[13.294663] (rovc_comm_mqtt) StderrLine: {'line': b'  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_directory)\n'}
+[13.294760] (rovc_comm_mqtt) StderrLine: {'line': b'  cmake_install.cmake:46 (include)\n'}
+[13.294815] (rovc_comm_mqtt) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[13.294870] (rovc_comm_mqtt) StderrLine: {'line': b'\x1b[0m\n'}
+[13.294925] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/build/.built_by\n'}
+[13.295020] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/build/COLCON_IGNORE\n'}
+[13.295094] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/.colcon_install_layout\n'}
+[13.295164] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/COLCON_IGNORE\n'}
+[13.295216] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/_local_setup_util_ps1.py\n'}
+[13.295283] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/_local_setup_util_sh.py\n'}
+[13.295343] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/local_setup.bash\n'}
+[13.295414] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/local_setup.ps1\n'}
+[13.295471] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/local_setup.sh\n'}
+[13.295523] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/local_setup.zsh\n'}
+[13.295591] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/setup.bash\n'}
+[13.295671] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/setup.ps1\n'}
+[13.295782] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/setup.sh\n'}
+[13.295876] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/install/setup.zsh\n'}
+[13.295975] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/COLCON_IGNORE\n'}
+[13.296051] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/build_2025-05-20_22-28-42/events.log\n'}
+[13.296184] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/build_2025-05-20_22-28-42/logger_all.log\n'}
+[13.296265] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/latest/events.log\n'}
+[13.296379] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/latest/logger_all.log\n'}
+[13.296533] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/latest_build/events.log\n'}
+[13.296643] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/log/latest_build/logger_all.log\n'}
+[13.296730] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/config/params.yaml\n'}
+[13.296884] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/ament_index/resource_index/package_run_dependencies/rovc_comm_mqtt\n'}
+[13.297045] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/ament_index/resource_index/parent_prefix_path/rovc_comm_mqtt\n'}
+[13.297187] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/environment/ament_prefix_path.sh\n'}
+[13.297301] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/environment/ament_prefix_path.dsv\n'}
+[13.297524] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/environment/path.sh\n'}
+[13.297692] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/environment/path.dsv\n'}
+[13.297796] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/local_setup.bash\n'}
+[13.297892] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/local_setup.sh\n'}
+[13.297992] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/local_setup.zsh\n'}
+[13.298122] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/local_setup.dsv\n'}
+[13.298214] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Symlinking: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/package.dsv\n'}
+[13.308267] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/ament_index/resource_index/packages/rovc_comm_mqtt\n'}
+[13.308411] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/cmake/rovc_comm_mqttConfig.cmake\n'}
+[13.308538] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/cmake/rovc_comm_mqttConfig-version.cmake\n'}
+[13.308634] (rovc_comm_mqtt) StdoutLine: {'line': b'-- Up-to-date symlink: /home/luka/ros2_diplpro/install/rovc_comm_mqtt/share/rovc_comm_mqtt/package.xml\n'}
+[13.310147] (rovc_comm_mqtt) CommandEnded: {'returncode': 0}
+[13.320815] (rovc_comm_mqtt) JobEnded: {'identifier': 'rovc_comm_mqtt', 'rc': 0}
+[13.321447] (-) EventReactorShutdown: {}

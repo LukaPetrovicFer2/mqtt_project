@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/luka/ros2_diplpro/build/rovc_comm_mqtt/publisher_node" "/home/luka/ros2_diplpro/build/rovc_comm_mqtt/subscriber_node" "/home/luka/ros2_diplpro/build/rovc_comm_mqtt/pub_node" "TARGETS" "publisher_node" "subscriber_node" "pub_node" "DESTINATION" "lib/rovc_comm_mqtt")

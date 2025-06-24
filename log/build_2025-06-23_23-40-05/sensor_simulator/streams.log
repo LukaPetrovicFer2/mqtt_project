@@ -1,0 +1,17 @@
+[0.568s] Invoking command in '/home/luka/ros2_diplpro/build/sensor_simulator': PYTHONPATH=/home/luka/ros2_diplpro/build/sensor_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luka/ros2_diplpro/build/sensor_simulator/build --no-deps symlink_data
+[0.800s] running develop
+[0.939s] running egg_info
+[0.939s] writing sensor_simulator.egg-info/PKG-INFO
+[0.940s] writing dependency_links to sensor_simulator.egg-info/dependency_links.txt
+[0.940s] writing entry points to sensor_simulator.egg-info/entry_points.txt
+[0.940s] writing requirements to sensor_simulator.egg-info/requires.txt
+[0.940s] writing top-level names to sensor_simulator.egg-info/top_level.txt
+[0.942s] reading manifest file 'sensor_simulator.egg-info/SOURCES.txt'
+[0.942s] writing manifest file 'sensor_simulator.egg-info/SOURCES.txt'
+[0.944s] running build_ext
+[0.944s] Creating /home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages/sensor-simulator.egg-link (link to .)
+[0.944s] Installing sensor_simulator script to /home/luka/ros2_diplpro/install/sensor_simulator/lib/sensor_simulator
+[0.945s] 
+[0.945s] Installed /home/luka/ros2_diplpro/build/sensor_simulator
+[0.945s] running symlink_data
+[0.968s] Invoked command in '/home/luka/ros2_diplpro/build/sensor_simulator' returned '0': PYTHONPATH=/home/luka/ros2_diplpro/build/sensor_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/luka/ros2_diplpro/build/sensor_simulator/build --no-deps symlink_data

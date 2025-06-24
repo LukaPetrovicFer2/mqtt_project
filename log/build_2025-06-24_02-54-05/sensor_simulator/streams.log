@@ -1,0 +1,36 @@
+[0.574s] Invoking command in '/home/luka/ros2_diplpro/build/sensor_simulator': PYTHONPATH=/home/luka/ros2_diplpro/build/sensor_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/luka/ros2_diplpro/build/sensor_simulator/build
+[0.800s] running develop
+[0.940s] Removing /home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages/sensor-simulator.egg-link (link to .)
+[0.963s] Invoked command in '/home/luka/ros2_diplpro/build/sensor_simulator' returned '0': PYTHONPATH=/home/luka/ros2_diplpro/build/sensor_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/luka/ros2_diplpro/build/sensor_simulator/build
+[0.965s] Invoking command in '/home/luka/ros2_diplpro/src/sensor_simulator': PYTHONPATH=/home/luka/ros2_diplpro/build/sensor_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_simulator build --build-base /home/luka/ros2_diplpro/build/sensor_simulator/build install --record /home/luka/ros2_diplpro/build/sensor_simulator/install.log --single-version-externally-managed install_data --force
+[1.182s] running egg_info
+[1.183s] writing ../../build/sensor_simulator/sensor_simulator.egg-info/PKG-INFO
+[1.183s] writing dependency_links to ../../build/sensor_simulator/sensor_simulator.egg-info/dependency_links.txt
+[1.184s] writing entry points to ../../build/sensor_simulator/sensor_simulator.egg-info/entry_points.txt
+[1.184s] writing requirements to ../../build/sensor_simulator/sensor_simulator.egg-info/requires.txt
+[1.184s] writing top-level names to ../../build/sensor_simulator/sensor_simulator.egg-info/top_level.txt
+[1.185s] reading manifest file '../../build/sensor_simulator/sensor_simulator.egg-info/SOURCES.txt'
+[1.186s] writing manifest file '../../build/sensor_simulator/sensor_simulator.egg-info/SOURCES.txt'
+[1.186s] running build
+[1.186s] running build_py
+[1.186s] creating /home/luka/ros2_diplpro/build/sensor_simulator/build
+[1.187s] creating /home/luka/ros2_diplpro/build/sensor_simulator/build/lib
+[1.187s] creating /home/luka/ros2_diplpro/build/sensor_simulator/build/lib/sensor_simulator
+[1.187s] copying sensor_simulator/sensor_simulator.py -> /home/luka/ros2_diplpro/build/sensor_simulator/build/lib/sensor_simulator
+[1.196s] copying sensor_simulator/__init__.py -> /home/luka/ros2_diplpro/build/sensor_simulator/build/lib/sensor_simulator
+[1.196s] running install
+[1.196s] running install_lib
+[1.197s] creating /home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages/sensor_simulator
+[1.197s] copying /home/luka/ros2_diplpro/build/sensor_simulator/build/lib/sensor_simulator/sensor_simulator.py -> /home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages/sensor_simulator
+[1.198s] copying /home/luka/ros2_diplpro/build/sensor_simulator/build/lib/sensor_simulator/__init__.py -> /home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages/sensor_simulator
+[1.198s] byte-compiling /home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages/sensor_simulator/sensor_simulator.py to sensor_simulator.cpython-310.pyc
+[1.199s] byte-compiling /home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages/sensor_simulator/__init__.py to __init__.cpython-310.pyc
+[1.199s] running install_data
+[1.199s] copying resource/sensor_simulator -> /home/luka/ros2_diplpro/install/sensor_simulator/share/ament_index/resource_index/packages
+[1.199s] copying package.xml -> /home/luka/ros2_diplpro/install/sensor_simulator/share/sensor_simulator
+[1.199s] running install_egg_info
+[1.201s] Copying ../../build/sensor_simulator/sensor_simulator.egg-info to /home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages/sensor_simulator-0.0.0-py3.10.egg-info
+[1.201s] running install_scripts
+[1.221s] Installing sensor_simulator script to /home/luka/ros2_diplpro/install/sensor_simulator/lib/sensor_simulator
+[1.221s] writing list of installed files to '/home/luka/ros2_diplpro/build/sensor_simulator/install.log'
+[1.243s] Invoked command in '/home/luka/ros2_diplpro/src/sensor_simulator' returned '0': PYTHONPATH=/home/luka/ros2_diplpro/build/sensor_simulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luka/ros2_diplpro/install/sensor_simulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_simulator build --build-base /home/luka/ros2_diplpro/build/sensor_simulator/build install --record /home/luka/ros2_diplpro/build/sensor_simulator/install.log --single-version-externally-managed install_data --force
