@@ -1,0 +1,20 @@
+# deklariranje topica za senzore ovisno o tipu podatka
+
+mqtt_bridge_node:
+  ros__parameters:
+    mqtt_host: "tcp://192.168.2.100:1883"
+    mqtt_client_id: "ros2_mqtt_bridge"
+
+    float64_topics:
+      - "/depth:/depth"
+      - "/depth_variance:/depth_variance"
+      - "/altitude:/altitude"
+      - "/altitude_covariance:/altitude_covariance"
+
+    float64_multiarray_topics:
+      - "/velocity_covariance:/velocity_covariance"
+      - "/beam_ranges:/beam_ranges"
+
+    uint8_topics:
+      - "/velocity_reference:/velocity_reference"
+
