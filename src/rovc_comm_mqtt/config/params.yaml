@@ -6,15 +6,13 @@ mqtt_bridge_node:
     mqtt_client_id: "ros2_mqtt_bridge"
 
     float64_topics:
-      - "/depth:/depth"
-      - "/depth_variance:/depth_variance"
-      - "/altitude:/altitude"
-      - "/altitude_covariance:/altitude_covariance"
+      - "/depth"
+      - "/depth_variance"
+      - "/altitude"
+      - "/altitude_covariance"
+      - "/velocity_x"
+      - "/velocity_y"
 
     float64_multiarray_topics:
-      - "/velocity_covariance:/velocity_covariance"
-      - "/beam_ranges:/beam_ranges"
-
-    uint8_topics:
-      - "/velocity_reference:/velocity_reference"
-
+      - "/velocity_covariance"
+      - "/beam_ranges"

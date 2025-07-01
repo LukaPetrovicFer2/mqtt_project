@@ -1,99 +1,91 @@
+#include <chrono>
+#include <functional>
+#include <memory>
+#include <string>
+#include <unordered_map>
+#include <mutex>
+#include <nlohmann/json.hpp>
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/float64.hpp"
 #include "std_msgs/msg/float64_multi_array.hpp"
-#include "std_msgs/msg/u_int8.hpp"
-#include <mqtt/async_client.h>
-#include <vector>
-#include <string>
-#include <memory>
+#include "std_msgs/msg/string.hpp"
+#include "rclcpp/parameter_client.hpp"
 
-class MqttBridgeNode : public rclcpp::Node {
+using namespace std::chrono_literals;
+using json = nlohmann::json;
+
+class PubNode : public rclcpp::Node
+{
 public:
-  MqttBridgeNode()
-  : Node("mqtt_bridge_node")
-  {
-    // load MQTT config 
-    std::string mqtt_host = this->declare_parameter<std::string>("mqtt_host", "tcp://localhost:1883");
-    std::string mqtt_client_id = this->declare_parameter<std::string>("mqtt_client_id", "ros2_mqtt_bridge"); // ip addres defined in params.yaml
+    PubNode() : Node("pub_node")
+    {
+        declare_parameter<std::vector<std::string>>("topics");
+        declare_parameter<std::vector<std::string>>("types");
 
-    mqtt_client_ = std::make_unique<mqtt::async_client>(mqtt_host, mqtt_client_id); // await connection (add try/catch later for disconnections)
-    mqtt_client_->connect()->wait();
-    RCLCPP_INFO(this->get_logger(), "✅ Connected to MQTT broker at %s", mqtt_host.c_str()); // confirmation
+        std::vector<std::string> topics, types;
+        get_parameter("topics", topics);
+        get_parameter("types", types);
 
-    // declare and subscribe to each topic group based on data type
-    declare_and_subscribe<std_msgs::msg::Float64>("float64_topics", float64_subs_);
-    declare_and_subscribe<std_msgs::msg::Float64MultiArray>("float64_multiarray_topics", float64_multiarray_subs_);
-    declare_and_subscribe<std_msgs::msg::UInt8>("uint8_topics", uint8_subs_);
-  }
+        if (topics.size() != types.size()) {
+            RCLCPP_ERROR(this->get_logger(), "topics and types must have the same size");
+            return;
+        }
+
+        for (size_t i = 0; i < topics.size(); ++i) {
+            if (types[i] == "float64")
+                subscribe<std_msgs::msg::Float64>(topics[i]);
+            else if (types[i] == "float64_multi_array")
+                subscribe<std_msgs::msg::Float64MultiArray>(topics[i]);
+            else
+                RCLCPP_WARN(this->get_logger(), "Unsupported type for topic %s", topics[i].c_str());
+        }
+
+        pub_ = this->create_publisher<std_msgs::msg::String>("mqtt_aggregated", 10);
+        timer_ = this->create_wall_timer(200ms, std::bind(&PubNode::publish_combined_json, this));
+    }
 
 private:
-  std::unique_ptr<mqtt::async_client> mqtt_client_;
+    template<typename MsgType>
+    void subscribe(const std::string &topic_name)
+    {
+        auto callback = [this, topic_name](typename MsgType::SharedPtr msg) {
+            std::lock_guard<std::mutex> lock(data_mutex_);
+            if constexpr (std::is_same_v<MsgType, std_msgs::msg::Float64>)
+                data_[topic_name] = static_cast<double>(msg->data);
+            else if constexpr (std::is_same_v<MsgType, std_msgs::msg::Float64MultiArray>)
+                data_[topic_name] = std::vector<double>(msg->data.begin(), msg->data.end());
+        };
 
-  // declare the message types
-  std::vector<rclcpp::SubscriptionBase::SharedPtr> float64_subs_;
-  std::vector<rclcpp::SubscriptionBase::SharedPtr> float64_multiarray_subs_;
-  std::vector<rclcpp::SubscriptionBase::SharedPtr> uint8_subs_;
+        subs_.push_back(this->create_subscription<MsgType>(topic_name, 10, callback));
+    }
 
-  template<typename MsgType>
-  void declare_and_subscribe(const std::string & param_name,
-                             std::vector<rclcpp::SubscriptionBase::SharedPtr> & subscriptions)
-  {
-    std::vector<std::string> mappings = this->declare_parameter(param_name, std::vector<std::string>{});
+    void publish_combined_json()
+    {
+        std::lock_guard<std::mutex> lock(data_mutex_);
+        json j;
 
-    for (const auto & entry : mappings) {
-      auto delimiter_pos = entry.find(':'); // find the : in params which splits the ROS2 and MQTT topic names (they're the same now)
-      if (delimiter_pos == std::string::npos) {
-        RCLCPP_WARN(this->get_logger(), "⚠️ Invalid mapping format (expected 'ros_topic:mqtt_topic'): %s", entry.c_str());
-        continue;
-      }
-
-      std::string ros_topic = entry.substr(0, delimiter_pos);
-      std::string mqtt_topic = entry.substr(delimiter_pos + 1);
-
-      auto sub = this->create_subscription<MsgType>(
-        ros_topic, 10, // queue size
-        [this, mqtt_topic](const typename MsgType::SharedPtr msg) { //forward any declared ROS2 topic to MQTT
-          this->publish_to_mqtt<MsgType>(mqtt_topic, msg);
+        for (const auto &kv : data_)
+        {
+            j[kv.first] = kv.second;
         }
-      );
-      subscriptions.push_back(sub); // Sub save and confirmation for debbuging (likely removed in final ver.)
-      RCLCPP_INFO(this->get_logger(), "📡 Subscribed to ROS topic '%s' → MQTT topic '%s'",
-                  ros_topic.c_str(), mqtt_topic.c_str());
-    }
-  }
 
-  template<typename MsgType>
-  void publish_to_mqtt(const std::string & mqtt_topic, const typename MsgType::SharedPtr & msg) {
-    std::string payload;
+        auto msg = std_msgs::msg::String();
+        msg.data = j.dump();
 
-    if constexpr (std::is_same_v<MsgType, std_msgs::msg::Float64>) {
-      payload = std::to_string(msg->data); // check msg type and convert to string
-    } else if constexpr (std::is_same_v<MsgType, std_msgs::msg::UInt8>) {
-      payload = std::to_string(msg->data);
-    } else if constexpr (std::is_same_v<MsgType, std_msgs::msg::Float64MultiArray>) { // format multiarray as comma separated string
-      for (size_t i = 0; i < msg->data.size(); ++i) { 
-        payload += std::to_string(msg->data[i]);
-        if (i < msg->data.size() - 1) payload += ",";
-      }
-    } else {
-      RCLCPP_WARN(this->get_logger(), " Unsupported message type for MQTT publishing.");
-      return;
+        pub_->publish(msg);
     }
 
-    RCLCPP_INFO(this->get_logger(), "Publishing to MQTT topic '%s': %s", // Pub confirmation for debuggingy  (will be removed in final version)
-              mqtt_topic.c_str(), payload.c_str());
-
-    try {
-      mqtt_client_->publish(mqtt_topic, payload.c_str(), payload.length(), 1, false); // QoS = 1, false = not retained
-    } catch (const mqtt::exception & e) {
-      RCLCPP_ERROR(this->get_logger(), "MQTT publish failed: %s", e.what()); // fail msg
-    }
-  }
+    std::vector<rclcpp::SubscriptionBase::SharedPtr> subs_;
+    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub_;
+    rclcpp::TimerBase::SharedPtr timer_;
+    std::unordered_map<std::string, json> data_;
+    std::mutex data_mutex_;
 };
 
-int main(int argc, char * argv[]) {
-  rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<MqttBridgeNode>());
-  rclcpp::shutdown();
-  return 0;
+int main(int argc, char *argv[])
+{
+    rclcpp::init(argc, argv);
+    rclcpp::spin(std::make_shared<PubNode>());
+    rclcpp::shutdown();
+    return 0;
 }
